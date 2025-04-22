@@ -22,6 +22,7 @@ const TaskForm = ({ editTaskId }: Props) => {
     useEffect(() => {
         if (editTaskId) {
             const taskData = activeTasks.find(task => task.id === editTaskId)
+            description.set(taskData?.title || "")
             title.set(taskData?.title || "'")
         }
     }, [editTaskId]);

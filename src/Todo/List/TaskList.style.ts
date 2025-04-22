@@ -12,9 +12,9 @@ const TaskListStyle: IProcessedStyleSet<ITaskListStyle> = mergeStyleSets({
         minHeight:30,
         padding:10,
         width:"100%",
-        backgroundColor:"lavender",
+        backgroundColor:"rgb(164, 194, 243)",
         selectors:{
-            "&:hover":{background:"rgb(243,242,241)"},
+            "&:hover":{background:"rgb(211, 222, 243)"},
         },
         margin:5,
         display:"flex",
