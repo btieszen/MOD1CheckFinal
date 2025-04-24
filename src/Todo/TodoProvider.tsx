@@ -30,7 +30,8 @@ const updateTaskAction = (state: ITodoState,action: IUpdateAction) =>{
         cloneActiveTasks[index]= action.data;
     }
     return cloneActiveTasks;
-}
+};
+
 
     const reducer = (state: ITodoState, action: IReducerAction) => {
     switch (action.type) {

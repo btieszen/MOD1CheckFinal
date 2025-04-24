@@ -27,7 +27,7 @@ export enum ActionTypeEnum{
    
 }
 
-export type IReducerAction = IAddAction | IDeleteAction  |IUpdateAction
+export type IReducerAction = IAddAction | IDeleteAction  | IUpdateAction
 
 export interface IAddAction{
     type:ActionTypeEnum.Add;

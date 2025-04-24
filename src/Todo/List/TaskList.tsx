@@ -12,7 +12,7 @@ type Props={
     setEditTask : (taskId : string) => void
   }
 
-const TaskList = ({setEditTask} : Props) =>{
+const TaskList = ({ setEditTask } : Props) =>{
 const {activeTasks,dispatch} = useContext(TodoContext);
 
 const onTaskDelete=(id:string)=>{
@@ -22,9 +22,6 @@ const onTaskDelete=(id:string)=>{
 
 
 const onRenderCell = (task: ITask) => {
-    function onEditTaskClick(id: string) {
-        setEditTask(id);
-    }
 
     return (
         <Stack horizontal key={task.id} className={TaskListStyle.taskItem}>
@@ -38,8 +35,7 @@ const onRenderCell = (task: ITask) => {
                  
                 <FontIcon iconName="EditNote" className={TaskListStyle.iconStyle}
                 onClick={() => {
-                  onTaskDelete(task.id)
-                    onEditTaskClick(task.id);
+                    setEditTask(task.id)
                 }}/>
 
                 <FontIcon iconName="Delete" className={TaskListStyle.iconStyle}

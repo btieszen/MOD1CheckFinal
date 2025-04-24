@@ -29,8 +29,10 @@ const HomeStyle: IProcessedStyleSet<IHomeStyle>= mergeStyleSets({
         display: 'flex',
         justifyContent: 'center',
     },
-    pivotContainer:{
-        margin:20,
-    },
+    pivotContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '10px',
+      },
 });
 export default HomeStyle;
